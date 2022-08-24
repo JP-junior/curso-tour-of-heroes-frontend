@@ -9,11 +9,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroesComponent {
 
-  hero: Hero = {
-    id: 1,
-    name: 'Wolverine'
-  };
-
   heroes = HEROES;
   selectedHero?: Hero;
 
