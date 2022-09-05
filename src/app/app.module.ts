@@ -1,3 +1,4 @@
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -16,13 +17,15 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { AppRountingModule } from './app-rounting.module';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     AppRountingModule,
     MatIconModule,
     FlexLayoutModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
