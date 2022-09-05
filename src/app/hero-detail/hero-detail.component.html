@@ -1,5 +1,5 @@
 <div *ngIf="hero">
-  <h2>{{ hero.name | uppercase }} Details</h2>
+  <h1>{{ hero.name | uppercase }} Details</h1>
   <div>
     <span>id: {{ hero.id }}</span>
   </div>
@@ -16,4 +16,6 @@
       type="text"
     />
   </div>
+
+  <button mat-raised-button (click)="goBack()">Go back</button>
 </div>
