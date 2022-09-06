@@ -1,4 +1,4 @@
-import { MaterialModule } from './material/material.module';
+import { CoreModule } from './core/core.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { NgModule } from '@angular/core';
@@ -7,8 +7,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MessagesComponent } from './messages/messages.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import {AppRountingModule} from './app-rounting.module';
 
 @NgModule({
@@ -16,7 +14,6 @@ import {AppRountingModule} from './app-rounting.module';
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent,
     DashboardComponent
   ],
   imports: [
@@ -24,8 +21,7 @@ import {AppRountingModule} from './app-rounting.module';
     FormsModule,
     BrowserAnimationsModule,
     AppRountingModule,
-    FlexLayoutModule,
-    MaterialModule
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
