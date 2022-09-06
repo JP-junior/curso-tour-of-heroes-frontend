@@ -1,29 +1,30 @@
+import { HeroesModule } from './heroes/heroes.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { CoreModule } from './core/core.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {AppRountingModule} from './app-rounting.module';
+import { AppRountingModule } from './app-rounting.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeroesComponent,
-    HeroDetailComponent,
-    DashboardComponent
-  ],
+  declarations: [AppComponent],
   imports: [
+    // @angular
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+
+    // feature
+    DashboardModule,
+    HeroesModule,
+
+    // app
     AppRountingModule,
-    CoreModule
+    CoreModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
