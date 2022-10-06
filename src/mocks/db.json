@@ -10,7 +10,7 @@
     },
     {
       "id": 3,
-      "name": "Batman"
+      "name": "Batman2"
     },
     {
       "id": 4,
@@ -39,6 +39,18 @@
     {
       "id": 10,
       "name": "Capitão América"
+    },
+    {
+      "name": "The Flash",
+      "id": 11
+    },
+    {
+      "name": "Jorge Paduanelli",
+      "id": 12
+    },
+    {
+      "name": "The Flash",
+      "id": 13
     }
   ]
 }
