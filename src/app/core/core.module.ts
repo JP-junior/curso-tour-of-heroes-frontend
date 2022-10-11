@@ -9,8 +9,14 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpErrorInterceptor } from './interceptors/http-error.interceptor';
+import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
 
-const COMPONENTS = [ToolbarComponent, MessagesComponent, LoadingComponent];
+const COMPONENTS = [
+  ToolbarComponent,
+  MessagesComponent,
+  LoadingComponent,
+  ConfirmationDialogComponent,
+];
 const MODULES = [FlexLayoutModule, MaterialModule, RouterModule];
 
 @NgModule({
